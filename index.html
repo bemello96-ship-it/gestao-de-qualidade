@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TaskFlow</title>
+</head>
+<body>
+ <header>
+    <h1>TaskFlow</h1>
+    <p>Controle de Tarefas</p>
+ </header> 
+
+ <section>
+  <h2>Adicionar nova tarefa</h2>
+  <form id="form-tarefa">
+
+ <label for="titulo">Título da tarefa:</label>
+ <input type="text" id="titulo" placeholder="Digite o título">
+
+ <label for="descricao">Descrição:</label>
+ <textarea id="descricao" placeholder="Descreva sua tarefa"></textarea>
+
+ <label for="responsavel">Responsável:</label>
+ <input type="text" id="responsavel" placeholder="Nome do responsável">
+
+ <label for="data">Data de vencimento:</label>
+ <input type="date" id="data">
+
+ <label for="status">Status:</label>
+ <select id="status">
+    <option value="Pendente">Pendente</option>
+    <option value="Em andamento">Em andamento</option>
+    <option value="Concluída">Concluída</option>
+ </select>
+
+ <button type="submit">Adicionar tarefa</button>
+
+</form>
+ </section>
+
+<section>
+    <h2>Minhas tarefas</h2>
+    <div id="lista-tarefas">
+
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
